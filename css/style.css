@@ -35,7 +35,9 @@ b {
 }
 
 html {
-  background-color: #1e1e1e;
+  background-image:url('/img/background.jpg');
+ background-repeat:no-repeat;
+ background-attachment:fixed;
   color: #c6c9ce;
   font-size: 15px;
   line-height: 1.5;
@@ -481,7 +483,9 @@ header .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111111;
+  background-image:url('/img/background.jpg');
+ background-repeat:no-repeat;
+ background-attachment:fixed;
   transition: 0.5s;
   z-index: 2;
 }
@@ -506,7 +510,9 @@ header .logo {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #1e1e1e00;
+  background-image:url('/img/background.jpg');
+ background-repeat:no-repeat;
+ background-attachment:fixed;
   mix-blend-mode: overlay;
 }
 
