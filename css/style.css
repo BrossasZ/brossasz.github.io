@@ -38,6 +38,7 @@ html {
   background-image:url('/img/background.jpg');
  background-repeat:no-repeat;
  background-attachment:fixed;
+     background-size:cover;
   color: #c6c9ce;
   font-size: 15px;
   line-height: 1.5;
@@ -460,6 +461,7 @@ header .logo {
   width: 60px;
   height: 60px;
   background: url(../img/menu.png);
+     background-size:cover;
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
@@ -484,6 +486,7 @@ header .logo {
   justify-content: space-between;
   align-items: center;
   background-image:url('/img/background.jpg');
+     background-size:cover;
  background-repeat:no-repeat;
  background-attachment:fixed;
   transition: 0.5s;
