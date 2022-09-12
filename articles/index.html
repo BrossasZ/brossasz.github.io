@@ -9,12 +9,12 @@
     <meta name="description" content="A blog by Brossas Zaichek">
 
     <!-- CSS -->
-    <link type="text/css" rel="stylesheet" href="css/common.css">
-    <link type="text/css" rel="stylesheet" href="css/style.css">
-    <link type="text/css" rel="stylesheet" href="css/iconfont.css">
+    <link type="text/css" rel="stylesheet" href="/css/common.css">
+    <link type="text/css" rel="stylesheet" href="/css/style.css">
+    <link type="text/css" rel="stylesheet" href="/css/iconfont.css">
     <!-- JavaScript -->
-    <script type="text/javascript" src="js/loading.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="/js/loading.js"></script>
+    <script type="text/javascript" src="/js/common.js"></script>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
             <h2 class="logo">
                 <a href="/">
 
-                    <img class="logoimg" src="img/avatar.jpg" style="width: 1.5em;border-radius: 50%;"
+                    <img class="logoimg" src="/img/avatar.jpg" style="width: 1.5em;border-radius: 50%;"
                     alt="avatar">
                 </a>
             </h2>
@@ -52,24 +52,12 @@
     <div class="text title" id="text">
         <h3>Articles / 文章</h3>
         <br>
-        <div class='searchbox'>
-            <form class="searchbox" onSubmit="return check();" autocomplete="off">
-                <input type="text" placeholder="从所有文章内检索..." name="search" oninput="searchtext()" onpropertychange="searchtext()">
-                <button type="button" id='searchbutton'><span class="iconfontmini icon-search"></span></button>
-                <div class="resultlist" id="resultlist">
-                    <i>- 搜索 -</i><hr><p align="center">
-                        输入关键词以在文章标题及正文中查询
-                    </p>
-                    <hr><a href="https://github.com/ravelloh/RPageSearch">Search powered by RavelloH's RPageSearch</a>
-                </div>
-            </form>
-        </div>
         <div id='info'>
             <span id="runtime_span">此页面内容需要使用JavaScript</span>
             <script type="text/javascript">
                 var runtime_span = document.getElementById("runtime_span");
                 function show_runtime() {
-                    X = new Date("8/25/2022 00:00:00"); //设定时间(月\日\年 时:分:秒))
+                    X = new Date("9/11/2022 00:00:00"); //设定时间(月\日\年 时:分:秒))
                     Y = new Date(); //获取当前时间
                     T = (Y.getTime() - X.getTime());
                     M = 24 * 60 * 60 * 1000;
