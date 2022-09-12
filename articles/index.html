@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Brossas Zaichek的博客</title>
+
+    <meta name="keywords" content="Brossas Zaichek">
+    <meta name="description" content="A blog by Brossas Zaichek">
+
+    <!-- CSS -->
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/iconfont.css">
+    <!-- JavaScript -->
+    <script type="text/javascript" src="js/loading.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">
+                <a href="/">
+
+                    <img class="logoimg" src="img/avatar.jpg" style="width: 1.5em;border-radius: 50%;"
+                    alt="avatar">
+                </a>
+            </h2>
+            <div class="headers">
+                <nav>
+                    <a href="/">
+                        HOME
+                    </a>
+                    <a href="/articles/">
+                        ARTICLES
+                    </a>
+                    <a href="/games/">
+                        GAMES
+                    </a>
+                    <a href="/about/">
+                        ABOUT
+                    </a>
+                </p>
+            </nav>
+        </div>
+        <div class="toggle" class="header">
+        </div>
+    </header>
+
+    <div class="overlay"></div>
+    <div class="text title" id="text">
+        <h3>Articles / 文章</h3>
+        <br>
+        <div class='searchbox'>
+            <form class="searchbox" onSubmit="return check();" autocomplete="off">
+                <input type="text" placeholder="从所有文章内检索..." name="search" oninput="searchtext()" onpropertychange="searchtext()">
+                <button type="button" id='searchbutton'><span class="iconfontmini icon-search"></span></button>
+                <div class="resultlist" id="resultlist">
+                    <i>- 搜索 -</i><hr><p align="center">
+                        输入关键词以在文章标题及正文中查询
+                    </p>
+                    <hr><a href="https://github.com/ravelloh/RPageSearch">Search powered by RavelloH's RPageSearch</a>
+                </div>
+            </form>
+        </div>
+        <div id='info'>
+            <span id="runtime_span">此页面内容需要使用JavaScript</span>
+            <script type="text/javascript">
+                var runtime_span = document.getElementById("runtime_span");
+                function show_runtime() {
+                    X = new Date("8/25/2022 00:00:00"); //设定时间(月\日\年 时:分:秒))
+                    Y = new Date(); //获取当前时间
+                    T = (Y.getTime() - X.getTime());
+                    M = 24 * 60 * 60 * 1000;
+                    a = T / M;
+                    A = Math.floor(a);
+                    b = (a - A) * 24;
+                    B = Math.floor(b);
+                    c = (b - B) * 60;
+                    C = Math.floor((b - B) * 60);
+                    D = Math.floor((c - C) * 60);
+                    runtime_span.innerHTML = "<br>记录并索引所有文章。<br>最近更新于" + A + "天前。"
+                }
+                show_runtime();
+            </script>
+        </div>
+
+    </div>
+
+    <div class="text listline" id="text">
+        <!-- 下面是一个完整的部分，往下直接复制修改就行 -->
+        <h4><a href="/articles/20220912/">我的第二篇文章</a></h4>
+        <span class="iconfontmini icon-clock"></span> <time>2022-09-12</time> · <span
+            class="iconfontmini icon-classification"></span><a href="/classification/#技术">技术</a> - <a
+            href="/classification/#设计">设计</a><br> <!-- 分类位置 -->
+        <span class="iconfontmini icon-tag"></span> <a class="tag" href="/tag/#javascript">JAVASCRIPT</a>
+        <a class="tag" href="/tag/#python">PYTHON</a><a class="tag" href="/tag/#json">JSON</a><br>
+        <hr> <!-- 标签位置 -->
+
+        <!-- 第二篇文章 -->
+        <h4><a href="/articles/20220911/">我的第一篇文章</a></h4>
+        <span class="iconfontmini icon-clock"></span> <time>2022-09-11</time> · <span
+            class="iconfontmini icon-classification"></span><a href="/classification/#技术">技术</a> - <a
+            href="/classification/#设计">设计</a><br> <!-- 分类位置 -->
+        <span class="iconfontmini icon-tag"></span> <a class="tag" href="/tag/#javascript">JAVASCRIPT</a>
+        <a class="tag" href="/tag/#python">PYTHON</a><a class="tag" href="/tag/#json">JSON</a><br>
+        <hr> <!-- 标签位置 -->
+
+    </div>
+    <ul class="social">
+        <li><a href="/about/"><span class="iconfont icon-about"></span></a></li>
+        <li><a href="http://github.com/brossasz/" target="_blank" rel="noreferrer"><span
+            class="iconfont icon-github"></span></a></li>
+    </ul>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>
