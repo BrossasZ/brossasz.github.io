@@ -35,10 +35,7 @@ b {
 }
 
 html {
-  background-image:url('/img/background.jpg');
- background-repeat:no-repeat;
- background-attachment:fixed;
-     background-size:cover;
+  background-color: #1e1e1e
   color: #c6c9ce;
   font-size: 15px;
   line-height: 1.5;
@@ -284,16 +281,15 @@ header {
 }
 
 .headers {
-  position: position;
-  margin-left: 10px;
-  top: -10px;
-  width: 70%;
+  margin-left: 8%;
+  width: 60%;
   text-align: right;
-  margin-top: 55px;
-  margin-bottom: 40px;
+  margin-top: 15px;
+  margin-bottom: 0px;
   word-spacing: 30px;
-  font-family: 'Furore', 'MicrosoftYaqiHeiBold', 'MicrosoftYahei';
-
+  font-family: "Microsoft Yahei", "MicrosoftYaHei";
+  font-weight: bold;
+  margin-right: 2%;
 }
 
 a:link {
@@ -439,14 +435,15 @@ body .text {
 
 header {
   position: absolute;
-  top: -10px;
+  top: 30px;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
+  padding: 10px 80px;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 10%;
 }
 
 header .logo {
@@ -454,7 +451,10 @@ header .logo {
   text-transform: uppercase;
   cursor: pointer;
   display: inline-block;
+  width: 26%;
+
 }
+
 
 .toggle {
   position: relative;
